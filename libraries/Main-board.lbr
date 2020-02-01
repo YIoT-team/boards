@@ -275,21 +275,6 @@ Source: LITE-ON ELECTRONICS, LTV816.pdf</description>
 <text x="-1.7272" y="-8.7884" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
 <text x="-3.2766" y="-8.7884" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
-<package name="SC59-BEC">
-<description>SC59 (SOT23) Motorola</description>
-<wire x1="1.4224" y1="0.8604" x2="1.4224" y2="-0.8604" width="0.127" layer="51"/>
-<wire x1="1.4224" y1="-0.8604" x2="-1.4224" y2="-0.8604" width="0.127" layer="51"/>
-<wire x1="-1.4224" y1="-0.8604" x2="-1.4224" y2="0.8604" width="0.127" layer="51"/>
-<wire x1="-1.4224" y1="0.8604" x2="1.4224" y2="0.8604" width="0.127" layer="51"/>
-<rectangle x1="-0.2286" y1="0.9112" x2="0.2286" y2="1.4954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.4954" x2="1.1684" y2="-0.9112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.4954" x2="-0.7112" y2="-0.9112" layer="51"/>
-<smd name="B" x="-0.95" y="-1.2" dx="1" dy="1.4" layer="1"/>
-<smd name="C" x="0" y="1.2" dx="1" dy="1.4" layer="1"/>
-<smd name="E" x="0.95" y="-1.2" dx="1" dy="1.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
 <package name="SOD80C">
 <description>&lt;B&gt;DIODE&lt;/B&gt;</description>
 <wire x1="1.3208" y1="0.7874" x2="-1.3208" y2="0.7874" width="0.1524" layer="51"/>
@@ -304,6 +289,21 @@ Source: LITE-ON ELECTRONICS, LTV816.pdf</description>
 <smd name="C" x="-1.7" y="0" dx="1.4" dy="1.8" layer="1"/>
 <text x="-1.524" y="1.143" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.524" y="-2.413" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="SOT23_1">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 </package>
 <package name="VDR10D561KJ">
 <description>&lt;b&gt;VDR-10D561KJ-2&lt;/b&gt;&lt;br&gt;</description>
@@ -442,7 +442,7 @@ Wickmann</description>
 <text x="-1.905" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.905" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="D/7343-31W">
+<package name="D_7343-31W">
 <description>&lt;b&gt;Chip Capacitor Type KEMET D / EIA 7343-21&lt;/b&gt;&lt;p&gt;
 KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <wire x1="-3.45" y1="2.1" x2="3.45" y2="2.1" width="0.1016" layer="51"/>
@@ -607,9 +607,9 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 <wire x1="-2.794" y1="-2.286" x2="-2.286" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="-2.286" y1="-2.54" x2="-2.286" y2="-3.556" width="0.1524" layer="94"/>
 <wire x1="-2.286" y1="-3.556" x2="2.54" y2="-3.556" width="0.1524" layer="94"/>
-<pin name="B" x="-7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
-<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R90"/>
+<pin name="3" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R270"/>
 <text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
@@ -876,25 +876,19 @@ KEMET V / EIA 7343-20, KEMET X / EIA 7343-43 Wafe solder</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="BCR108" prefix="T" uservalue="yes">
-<description>NPN Bias Resistor Transistor</description>
+<deviceset name="BCR108" prefix="VT">
 <gates>
 <gate name="G$1" symbol="NPN-DRIVER" x="0" y="0"/>
 </gates>
 <devices>
-<device name="SC59-BEC" package="SC59-BEC">
+<device name="E6327" package="SOT23_1">
 <connects>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name="">
-<attribute name="POPULARITY" value="" constant="no"/>
-</technology>
-<technology name="BCR108E6327">
-<attribute name="POPULARITY" value="" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -1160,7 +1154,7 @@ Wickmann</description>
 <gate name="G$1" symbol="CPOL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="D/7343-31W" package="D/7343-31W">
+<device name="D/7343-31W" package="D_7343-31W">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>

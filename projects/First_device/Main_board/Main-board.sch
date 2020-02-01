@@ -16711,21 +16711,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <rectangle x1="1.2954" y1="-0.8636" x2="1.8542" y2="0.8636" layer="51"/>
 <rectangle x1="-0.8636" y1="-0.7874" x2="-0.254" y2="0.7874" layer="21"/>
 </package>
-<package name="SC59-BEC" urn="urn:adsk.eagle:footprint:28691/1">
-<description>SC59 (SOT23) Motorola</description>
-<wire x1="1.4224" y1="0.8604" x2="1.4224" y2="-0.8604" width="0.127" layer="51"/>
-<wire x1="1.4224" y1="-0.8604" x2="-1.4224" y2="-0.8604" width="0.127" layer="51"/>
-<wire x1="-1.4224" y1="-0.8604" x2="-1.4224" y2="0.8604" width="0.127" layer="51"/>
-<wire x1="-1.4224" y1="0.8604" x2="1.4224" y2="0.8604" width="0.127" layer="51"/>
-<smd name="C" x="0" y="1.2" dx="1" dy="1.4" layer="1"/>
-<smd name="E" x="0.95" y="-1.2" dx="1" dy="1.4" layer="1"/>
-<smd name="B" x="-0.95" y="-1.2" dx="1" dy="1.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2286" y1="0.9112" x2="0.2286" y2="1.4954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.4954" x2="1.1684" y2="-0.9112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.4954" x2="-0.7112" y2="-0.9112" layer="51"/>
-</package>
 <package name="2EHDCR-5.08-10P">
 <description>&lt;b&gt;Ningbo screw treminal&lt;/b&gt;</description>
 <pad name="1" x="0" y="0" drill="1.2" shape="long" rot="R90" first="yes"/>
@@ -16960,18 +16945,27 @@ Source: LITE-ON ELECTRONICS, LTV816.pdf</description>
 <text x="5.7658" y="-0.635" size="1.27" layer="21" ratio="6" rot="SR0">&gt;Value</text>
 <text x="4.2164" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
+<package name="SOT23_1" urn="urn:adsk.eagle:footprint:28669/1" locally_modified="yes">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOD80C" urn="urn:adsk.eagle:package:43405/2" type="model">
 <description>DIODE</description>
 <packageinstances>
 <packageinstance name="SOD80C"/>
-</packageinstances>
-</package3d>
-<package3d name="SC59-BEC" urn="urn:adsk.eagle:package:28754/2" type="model">
-<description>SC59 (SOT23) Motorola</description>
-<packageinstances>
-<packageinstance name="SC59-BEC"/>
 </packageinstances>
 </package3d>
 <package3d name="DIL8-SMD" urn="urn:adsk.eagle:package:21965/1" type="box">
@@ -17001,45 +16995,6 @@ Source: LITE-ON ELECTRONICS, LTV816.pdf</description>
 <text x="-2.5654" y="-4.4958" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
-</symbol>
-<symbol name="NPN-DRIVER">
-<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
-<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
-<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="-4.826" y2="0.762" width="0.1524" layer="94"/>
-<wire x1="-4.826" y1="0.762" x2="-4.572" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="-4.572" y1="-0.508" x2="-4.318" y2="0.762" width="0.1524" layer="94"/>
-<wire x1="-4.318" y1="0.762" x2="-4.064" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="-4.064" y1="-0.508" x2="-3.81" y2="0.762" width="0.1524" layer="94"/>
-<wire x1="-3.81" y1="0.762" x2="-3.556" y2="-0.508" width="0.1524" layer="94"/>
-<wire x1="-3.556" y1="-0.508" x2="-3.302" y2="0" width="0.1524" layer="94"/>
-<wire x1="-3.302" y1="0" x2="-2.286" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.286" y1="0" x2="-0.254" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.286" y1="0" x2="-2.286" y2="-0.762" width="0.1524" layer="94"/>
-<wire x1="-2.286" y1="-0.762" x2="-1.778" y2="-1.016" width="0.1524" layer="94"/>
-<wire x1="-1.778" y1="-1.016" x2="-2.794" y2="-1.27" width="0.1524" layer="94"/>
-<wire x1="-2.794" y1="-1.27" x2="-1.778" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="-1.778" y1="-1.524" x2="-2.794" y2="-1.778" width="0.1524" layer="94"/>
-<wire x1="-2.794" y1="-1.778" x2="-1.778" y2="-2.032" width="0.1524" layer="94"/>
-<wire x1="-1.778" y1="-2.032" x2="-2.794" y2="-2.286" width="0.1524" layer="94"/>
-<wire x1="-2.794" y1="-2.286" x2="-2.286" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="-2.286" y1="-2.54" x2="-2.286" y2="-3.556" width="0.1524" layer="94"/>
-<wire x1="-2.286" y1="-3.556" x2="2.54" y2="-3.556" width="0.1524" layer="94"/>
-<circle x="-2.286" y="0" radius="0.254" width="0.3048" layer="94"/>
-<circle x="2.54" y="-3.556" radius="0.254" width="0.3048" layer="94"/>
-<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="B" x="-7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
-<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
 </symbol>
 <symbol name="MALE">
 <wire x1="-0.635" y1="6.35" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
@@ -17195,6 +17150,45 @@ Source: LITE-ON ELECTRONICS, LTV816.pdf</description>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
+<symbol name="NPN-DRIVER">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-4.826" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="-4.826" y1="0.762" x2="-4.572" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-4.572" y1="-0.508" x2="-4.318" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="-4.318" y1="0.762" x2="-4.064" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-4.064" y1="-0.508" x2="-3.81" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="0.762" x2="-3.556" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-3.556" y1="-0.508" x2="-3.302" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.302" y1="0" x2="-2.286" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="0" x2="-0.254" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="0" x2="-2.286" y2="-0.762" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="-0.762" x2="-1.778" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-1.016" x2="-2.794" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-2.794" y1="-1.27" x2="-1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-1.524" x2="-2.794" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-2.794" y1="-1.778" x2="-1.778" y2="-2.032" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-2.032" x2="-2.794" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="-2.794" y1="-2.286" x2="-2.286" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="-2.54" x2="-2.286" y2="-3.556" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="-3.556" x2="2.54" y2="-3.556" width="0.1524" layer="94"/>
+<circle x="-2.286" y="0" radius="0.254" width="0.3048" layer="94"/>
+<circle x="2.54" y="-3.556" radius="0.254" width="0.3048" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R90"/>
+<pin name="3" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LL4148">
@@ -17212,29 +17206,6 @@ Source: LITE-ON ELECTRONICS, LTV816.pdf</description>
 </package3dinstances>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BCR108" prefix="T" uservalue="yes">
-<description>NPN Bias Resistor Transistor</description>
-<gates>
-<gate name="G$1" symbol="NPN-DRIVER" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SC59-BEC" package="SC59-BEC">
-<connects>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="E" pad="E"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:28754/2"/>
-</package3dinstances>
-<technologies>
-<technology name="BCR108E6327">
-<attribute name="POPULARITY" value="" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -17512,6 +17483,23 @@ Source: &lt;a href="https://datasheet.lcsc.com/szlcsc/1810161222_VDR-Varistor-VD
 </device>
 </devices>
 </deviceset>
+<deviceset name="BCR108" prefix="VT">
+<gates>
+<gate name="G$1" symbol="NPN-DRIVER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="E6327" package="SOT23_1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1" urn="urn:adsk.eagle:library:371">
@@ -17614,7 +17602,7 @@ Source: &lt;a href="https://datasheet.lcsc.com/szlcsc/1810161222_VDR-Varistor-VD
 </package3d>
 </packages3d>
 <symbols>
-<symbol name="NPN" urn="urn:adsk.eagle:symbol:28915/1" library_version="4">
+<symbol name="NPN" urn="urn:adsk.eagle:symbol:26256/2" library_version="6">
 <wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
 <wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
@@ -17634,7 +17622,7 @@ Source: &lt;a href="https://datasheet.lcsc.com/szlcsc/1810161222_VDR-Varistor-VD
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="BC847*" urn="urn:adsk.eagle:component:29099/4" prefix="Q" library_version="4">
+<deviceset name="BC847*" urn="urn:adsk.eagle:component:29099/5" prefix="Q" library_version="6">
 <description>NPN Transistor</description>
 <gates>
 <gate name="G$1" symbol="NPN" x="0" y="0"/>
@@ -18007,7 +17995,6 @@ Wickmann</description>
 <attribute name="VOLTAGE" value="50V"/>
 </part>
 <part name="VD1" library="My_lib" deviceset="LL4148" device="" package3d_urn="urn:adsk.eagle:package:43405/2"/>
-<part name="T1" library="My_lib" deviceset="BCR108" device="SC59-BEC" package3d_urn="urn:adsk.eagle:package:28754/2" technology="BCR108E6327" value="BCR108E6327 "/>
 <part name="X1" library="My_lib" deviceset="2EHDCR-5.08-10P" device=""/>
 <part name="X2" library="My_lib" deviceset="2EHDCR-5.08-08P" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="2,2k">
@@ -18277,15 +18264,12 @@ Wickmann</description>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="VD2" library="My_lib" deviceset="LL4148" device="" package3d_urn="urn:adsk.eagle:package:43405/2"/>
-<part name="T2" library="My_lib" deviceset="BCR108" device="SC59-BEC" package3d_urn="urn:adsk.eagle:package:28754/2" technology="BCR108E6327" value="BCR108E6327 "/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="VD3" library="My_lib" deviceset="LL4148" device="" package3d_urn="urn:adsk.eagle:package:43405/2"/>
-<part name="T3" library="My_lib" deviceset="BCR108" device="SC59-BEC" package3d_urn="urn:adsk.eagle:package:28754/2" technology="BCR108E6327" value="BCR108E6327 "/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="VD4" library="My_lib" deviceset="LL4148" device="" package3d_urn="urn:adsk.eagle:package:43405/2"/>
-<part name="T4" library="My_lib" deviceset="BCR108" device="SC59-BEC" package3d_urn="urn:adsk.eagle:package:28754/2" technology="BCR108E6327" value="BCR108E6327 "/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -18313,6 +18297,10 @@ Wickmann</description>
 <attribute name="STYPE" value="X7R"/>
 <attribute name="VOLTAGE" value="50V"/>
 </part>
+<part name="VT1" library="My_lib" deviceset="BCR108" device="E6327"/>
+<part name="VT2" library="My_lib" deviceset="BCR108" device="E6327"/>
+<part name="VT3" library="My_lib" deviceset="BCR108" device="E6327"/>
+<part name="VT4" library="My_lib" deviceset="BCR108" device="E6327"/>
 </parts>
 <sheets>
 <sheet>
@@ -18344,10 +18332,6 @@ Wickmann</description>
 </instance>
 <instance part="VD1" gate="G$1" x="121.92" y="96.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="129.3114" y="98.9584" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="T1" gate="G$1" x="119.38" y="83.82" smashed="yes">
-<attribute name="NAME" x="114.3" y="86.36" size="1.778" layer="95"/>
-<attribute name="VALUE" x="109.22" y="88.9" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="X1" gate="G$1" x="-53.34" y="106.68" smashed="yes"/>
 <instance part="X1" gate="G$2" x="-53.34" y="88.9" smashed="yes"/>
@@ -18574,10 +18558,6 @@ Wickmann</description>
 <instance part="VD2" gate="G$1" x="121.92" y="60.96" smashed="yes" rot="R90">
 <attribute name="NAME" x="129.3114" y="63.3984" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="T2" gate="G$1" x="119.38" y="48.26" smashed="yes">
-<attribute name="NAME" x="114.3" y="50.8" size="1.778" layer="95"/>
-<attribute name="VALUE" x="109.22" y="53.34" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="GND4" gate="1" x="121.92" y="40.64" smashed="yes">
 <attribute name="VALUE" x="119.38" y="38.1" size="1.778" layer="96"/>
 </instance>
@@ -18587,10 +18567,6 @@ Wickmann</description>
 <instance part="VD3" gate="G$1" x="121.92" y="25.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="129.3114" y="27.8384" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="T3" gate="G$1" x="119.38" y="12.7" smashed="yes">
-<attribute name="NAME" x="114.3" y="15.24" size="1.778" layer="95"/>
-<attribute name="VALUE" x="109.22" y="17.78" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="GND5" gate="1" x="121.92" y="5.08" smashed="yes">
 <attribute name="VALUE" x="119.38" y="2.54" size="1.778" layer="96"/>
 </instance>
@@ -18599,10 +18575,6 @@ Wickmann</description>
 </instance>
 <instance part="VD4" gate="G$1" x="121.92" y="-10.16" smashed="yes" rot="R90">
 <attribute name="NAME" x="129.3114" y="-7.7216" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="T4" gate="G$1" x="119.38" y="-22.86" smashed="yes">
-<attribute name="NAME" x="114.3" y="-20.32" size="1.778" layer="95"/>
-<attribute name="VALUE" x="109.22" y="-17.78" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND6" gate="1" x="121.92" y="-30.48" smashed="yes">
 <attribute name="VALUE" x="119.38" y="-33.02" size="1.778" layer="96"/>
@@ -18660,6 +18632,22 @@ Wickmann</description>
 <attribute name="VALUE" x="42.799" y="133.604" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="STYPE" x="38.1" y="132.08" size="1.778" layer="96" rot="R90" display="off"/>
 <attribute name="VOLTAGE" x="38.1" y="132.08" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="VT1" gate="G$1" x="119.38" y="83.82" smashed="yes">
+<attribute name="NAME" x="114.3" y="86.36" size="1.778" layer="95"/>
+<attribute name="VALUE" x="109.22" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="VT2" gate="G$1" x="119.38" y="48.26" smashed="yes">
+<attribute name="NAME" x="114.3" y="50.8" size="1.778" layer="95"/>
+<attribute name="VALUE" x="109.22" y="53.34" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="VT3" gate="G$1" x="119.38" y="12.7" smashed="yes">
+<attribute name="NAME" x="114.3" y="15.24" size="1.778" layer="95"/>
+<attribute name="VALUE" x="109.22" y="17.78" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="VT4" gate="G$1" x="119.38" y="-22.86" smashed="yes">
+<attribute name="NAME" x="114.3" y="-20.32" size="1.778" layer="95"/>
+<attribute name="VALUE" x="109.22" y="-17.78" size="1.778" layer="96" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -18823,22 +18811,6 @@ Wickmann</description>
 <junction x="48.26" y="-17.78"/>
 </segment>
 <segment>
-<pinref part="GND3" gate="1" pin="GND"/>
-<pinref part="T1" gate="G$1" pin="E"/>
-</segment>
-<segment>
-<pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="T2" gate="G$1" pin="E"/>
-</segment>
-<segment>
-<pinref part="GND5" gate="1" pin="GND"/>
-<pinref part="T3" gate="G$1" pin="E"/>
-</segment>
-<segment>
-<pinref part="GND6" gate="1" pin="GND"/>
-<pinref part="T4" gate="G$1" pin="E"/>
-</segment>
-<segment>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="58.42" y1="139.7" x2="78.74" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="3"/>
@@ -18856,6 +18828,22 @@ Wickmann</description>
 <pinref part="C10" gate="G$1" pin="-"/>
 <wire x1="43.18" y1="124.46" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
 <junction x="50.8" y="124.46"/>
+</segment>
+<segment>
+<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="VT1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="VT2" gate="G$1" pin="2"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="VT3" gate="G$1" pin="2"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="VT4" gate="G$1" pin="2"/>
+<pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -19183,7 +19171,7 @@ Wickmann</description>
 <wire x1="132.08" y1="91.44" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="88.9" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
 <junction x="121.92" y="91.44"/>
-<pinref part="T1" gate="G$1" pin="C"/>
+<pinref part="VT1" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$33" class="0">
@@ -19193,9 +19181,9 @@ Wickmann</description>
 <wire x1="121.92" y1="55.88" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="53.34" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
 <junction x="121.92" y="55.88"/>
-<pinref part="T2" gate="G$1" pin="C"/>
 <pinref part="RY2" gate="A" pin="2"/>
 <wire x1="132.08" y1="58.42" x2="132.08" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="VT2" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -19205,9 +19193,9 @@ Wickmann</description>
 <wire x1="121.92" y1="20.32" x2="132.08" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="17.78" x2="121.92" y2="20.32" width="0.1524" layer="91"/>
 <junction x="121.92" y="20.32"/>
-<pinref part="T3" gate="G$1" pin="C"/>
 <pinref part="RY3" gate="A" pin="2"/>
 <wire x1="132.08" y1="22.86" x2="132.08" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="VT3" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$36" class="0">
@@ -19217,9 +19205,9 @@ Wickmann</description>
 <wire x1="121.92" y1="-15.24" x2="132.08" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="-17.78" x2="121.92" y2="-15.24" width="0.1524" layer="91"/>
 <junction x="121.92" y="-15.24"/>
-<pinref part="T4" gate="G$1" pin="C"/>
 <pinref part="RY4" gate="A" pin="2"/>
 <wire x1="132.08" y1="-12.7" x2="132.08" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="VT4" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -19288,9 +19276,9 @@ Wickmann</description>
 </net>
 <net name="OUT0" class="0">
 <segment>
-<pinref part="T1" gate="G$1" pin="B"/>
 <wire x1="83.82" y1="83.82" x2="111.76" y2="83.82" width="0.1524" layer="91"/>
 <label x="86.106" y="84.836" size="1.778" layer="95"/>
+<pinref part="VT1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="6"/>
@@ -19300,9 +19288,9 @@ Wickmann</description>
 </net>
 <net name="OUT1" class="0">
 <segment>
-<pinref part="T2" gate="G$1" pin="B"/>
 <wire x1="83.82" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
 <label x="85.598" y="49.276" size="1.778" layer="95"/>
+<pinref part="VT2" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="8"/>
@@ -19312,9 +19300,9 @@ Wickmann</description>
 </net>
 <net name="OUT2" class="0">
 <segment>
-<pinref part="T3" gate="G$1" pin="B"/>
 <wire x1="83.82" y1="12.7" x2="111.76" y2="12.7" width="0.1524" layer="91"/>
 <label x="85.344" y="13.208" size="1.778" layer="95"/>
+<pinref part="VT3" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="10"/>
@@ -19324,9 +19312,9 @@ Wickmann</description>
 </net>
 <net name="OUT3" class="0">
 <segment>
-<pinref part="T4" gate="G$1" pin="B"/>
 <wire x1="83.82" y1="-22.86" x2="111.76" y2="-22.86" width="0.1524" layer="91"/>
 <label x="84.836" y="-22.098" size="1.778" layer="95"/>
+<pinref part="VT4" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="A" pin="12"/>

@@ -1442,7 +1442,9 @@ Wickmann</description>
 <connect gate="G$1" pin="VDD_OUT" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

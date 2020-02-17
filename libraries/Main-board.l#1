@@ -1453,11 +1453,7 @@ Wickmann</description>
 <gate name="G$2" symbol="MALE" x="-2.54" y="-10.16"/>
 </gates>
 <devices>
-<device name="" package="2EHDCR-5.08-02P">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$2" pin="1" pad="2"/>
-</connects>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>

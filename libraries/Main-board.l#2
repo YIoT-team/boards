@@ -1451,13 +1451,15 @@ Wickmann</description>
 <gates>
 <gate name="G$1" symbol="MALE" x="-2.54" y="-5.08"/>
 <gate name="G$2" symbol="MALE" x="-2.54" y="-10.16"/>
+<gate name="G$3" symbol="MALE" x="-2.54" y="-15.24"/>
+<gate name="G$4" symbol="MALE" x="-2.54" y="-20.32"/>
+<gate name="G$5" symbol="MALE" x="-2.54" y="-25.4"/>
+<gate name="G$6" symbol="MALE" x="-2.54" y="-30.48"/>
+<gate name="G$7" symbol="MALE" x="-2.54" y="-35.56"/>
+<gate name="G$8" symbol="MALE" x="-2.54" y="-40.64"/>
 </gates>
 <devices>
-<device name="" package="2EHDCR-5.08-02P">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$2" pin="1" pad="2"/>
-</connects>
+<device name="">
 <technologies>
 <technology name=""/>
 </technologies>

@@ -12,19 +12,19 @@ PIN	NAME		CONNECT
 10	GPIO25		DO1
 11	GPIO26		DO2
 12	GPIO27		DO3
-13	GPIO14		Reserved for jtag (MTMS)
-14	GPIO12		Reserved for jtag (MTDI)
+13	GPIO14		
+14	GPIO12		
 ---
 15	GND		GND
-16	GPIO13		Reserved for jtag (MTCLK)
+16	GPIO13		
 17	SHD/SD2		Internal flash (HOLD)
 18	SWP/SD3		Internal flash (WP)
 19	SCS/CMD		Internal flash (CS)
 20	SCK/CLK		Internal flash (CLK)
 21	SDO/SD0		Internal flash (DO)
 22	SDI/SD1		Internal flash (DI)
-23	GPIO15		Reserved for jtag (MTDO)
-24	GPIO2
+23	GPIO15		SBA
+24	GPIO2           REDE
 ---
 25	GPIO0		Reset/ICSP reset
 26	GPIO4		LED_RXTX
@@ -34,9 +34,9 @@ PIN	NAME		CONNECT
 30	GPIO18		LED_STGREEN
 31	GPIO19
 32	NC
-33	GPIO21		REDE
+33	GPIO21		SDA (ATTEC)
 34	U0RXD		ICSP (RX)
 35	U0RXD		ICSP (TX)
-36	GPIO22          SBA
+36	GPIO22          SCL (ATTEC)
 37	GPIO23          DIN0
 38	GND		GND
